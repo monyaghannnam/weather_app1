@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter1);
         spinner.setOnItemSelectedListener(new SpinnerActivity());
-
+*/
     }
 
     @Override
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.main, menu);
         return true;
     }
-
+/*
     class thread extends AsyncTask<URL, Void, ArrayList<String>> {
 
 
@@ -280,5 +280,5 @@ public class MainActivity extends AppCompatActivity {
     }//synck
 */
 
-    }
+
 }
