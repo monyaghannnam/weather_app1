@@ -27,7 +27,7 @@ public class AreaAdapter extends ArrayAdapter<Area>{
         this.context = context;
         this.values = values;
     }
-/*
+
     @Override
     public int getCount(){
         return values.length;
@@ -70,5 +70,5 @@ public class AreaAdapter extends ArrayAdapter<Area>{
 
         return label;
     }
-    */
+
 }

@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-//import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -24,7 +24,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         super(context, 0, words);
 
     }
-/*
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -48,8 +48,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         temp.setText(current.getTemp());
 
         ImageView img=(ImageView)listItemView.findViewById(R.id.list_img);
-        Picasso.with(getContext()).load(current.getImgUrl()).
-                into(img);
+        Picasso.get().load(current.getImgUrl()).into(img);
 // resize(100, 100).
         img.setVisibility(View.VISIBLE);
 
@@ -57,5 +56,5 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         return listItemView;
 
-    }*/
+    }
 }

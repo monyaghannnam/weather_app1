@@ -22,7 +22,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Picasso;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.title);
-/*
-        res = (TextView) findViewById(R.id.result);
+
+       res = (TextView) findViewById(R.id.result);
         desc = (TextView) findViewById(R.id.description);
         temp = (TextView) findViewById(R.id.temp);
         spinner = (Spinner) findViewById(R.id.country_spinner);
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter1);
         spinner.setOnItemSelectedListener(new SpinnerActivity());
-*/
+
     }
 
     @Override
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.main, menu);
         return true;
     }
-/*
+
     class thread extends AsyncTask<URL, Void, ArrayList<String>> {
 
 
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 res.setTextSize(25);
                 String name = strings.get(1);
 
-                Picasso.with(MainActivity.this).load(name).
+                Picasso.get().load(name).
                         resize(300, 300).into(img);
 
                 temp.setText(strings.get(2));
@@ -175,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Check the internet connection", Toast.LENGTH_LONG).show();
         }
     }
+
     private boolean isNetworkConnected() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
@@ -278,7 +279,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }//synck
-*/
+
 
 
 }
