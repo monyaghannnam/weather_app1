@@ -17,7 +17,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="1.1"
         android:background="@color/colorPrimary"
         android:columnCount="2"
         android:rowCount="3">
@@ -27,12 +27,12 @@
         <ImageView
 
             android:id="@+id/img"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_rowSpan="2"
             android:paddingLeft="16dp"
             android:layout_gravity="left"
-            android:src="@drawable/sun_img"
+
 
             />
 
@@ -42,7 +42,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:paddingRight="16dp"
-            android:text="@string/app_name"
             android:textColor="@color/white"
             android:textSize="25sp"
 
@@ -54,11 +53,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="23"
-
             android:textColor="@color/white"
             android:textSize="80sp"
             android:textStyle="italic"
+            android:layout_rowSpan="2"
 
 
             />
@@ -68,8 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:padding="16dp"
-            android:text="@string/app_name"
+            android:paddingLeft="16dp"
             android:textColor="@color/white"
             android:textSize="25sp"
 
@@ -82,7 +79,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
+        android:layout_weight="3"
         android:background="@color/white"
         android:id="@+id/list"
 

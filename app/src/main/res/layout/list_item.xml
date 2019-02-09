@@ -2,24 +2,42 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tempreature"/>
+        android:id="@+id/tempreature"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:padding="48dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/day"/>
+        android:id="@+id/day"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_toLeftOf="@+id/list_img"
+        android:paddingTop="36dp"
+        android:paddingRight="16dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/weather"/>
+        android:id="@+id/weather"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@+id/list_img"
+        android:layout_below="@+id/day"
+        android:paddingRight="16dp"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/list_img"/>
+        android:scaleType="fitCenter"
+        android:id="@+id/list_img"
+        android:padding="16dp"
+        android:layout_alignParentRight="true" />
 
 
 </RelativeLayout>

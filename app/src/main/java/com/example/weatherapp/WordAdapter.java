@@ -48,10 +48,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
         temp.setText(current.getTemp());
 
         ImageView img=(ImageView)listItemView.findViewById(R.id.list_img);
-        Picasso.get().load(current.getImgUrl()).into(img);
-// resize(100, 100).
+        Picasso.with(getContext()).load(current.getImgUrl()).resize(200, 200).into(img);
+//
         img.setVisibility(View.VISIBLE);
-
+img.setPadding(0,96,24,0);
 
 
         return listItemView;

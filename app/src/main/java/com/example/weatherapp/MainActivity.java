@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 res.setTextSize(25);
                 String name = strings.get(1);
 
-                Picasso.get().load(name).
+                Picasso.with(MainActivity.this).load(name).
                         resize(300, 300).into(img);
 
                 temp.setText(strings.get(2));
